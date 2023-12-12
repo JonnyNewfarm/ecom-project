@@ -15,6 +15,7 @@ const ProductCard = ({ product }: Props) => {
       background=""
       _hover={{
         transform: "scale(1.04)",
+        transition: "0.2s",
       }}
     >
       <Image src={product.imageUrl}></Image>
