@@ -16,14 +16,23 @@ const ProductCard = ({ product }: Props) => {
       _hover={{
         transform: "scale(1.04)",
         transition: "0.2s",
+        cursor: "pointer",
       }}
     >
-      <Image src={product.imageUrl}></Image>
-      <CardBody>
-        <Heading fontSize="l">{product.title}</Heading>
-        <Text paddingTop="15px">{product.price}</Text>
-        <Link to={`/products/${product.id}`}>{product.title}</Link>
-      </CardBody>
+      <Link to={`/products/${product.id}`}>
+        <Image
+          src={product.imageUrl}
+          height={{ lg: "450px", sm: "80%", md: "550px" }}
+          objectFit="cover"
+        ></Image>
+        <CardBody>
+          <Heading fontSize="l">{product.title}</Heading>
+          <Text paddingTop="15px">Price: {product.price}$</Text>
+          <Button colorScheme="blue" marginTop={5}>
+            View more
+          </Button>
+        </CardBody>
+      </Link>
     </Card>
   );
 };

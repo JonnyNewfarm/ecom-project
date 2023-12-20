@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 export interface Product {
-    id?: string;
+    id: string;
     title?: string;
     price?: number;
     imageUrl?: string;
+    description?: string;
+    discountedPrice?: string;
+    rating?: string;
+    tags?: string[];
   }
 
   
