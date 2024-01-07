@@ -1,1 +1,1 @@
-##React project with Vite and TS
+# React project with Vite and TS
