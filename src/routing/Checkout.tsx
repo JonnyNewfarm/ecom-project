@@ -23,7 +23,7 @@ export const Checkout = () => {
           </Text>
         </Flex>
         <Flex justifyContent="center" marginTop={5}>
-          <Button onClick={onClick} color="white" bg={primaryCol} _hover="none">
+          <Button onClick={onClick} color="white" bg={primaryCol}>
             Go back to the homepage
           </Button>
         </Flex>

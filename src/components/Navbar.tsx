@@ -9,20 +9,13 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  HStack,
   IconButton,
-  Image,
-  Input,
-  Link,
   Spacer,
-  Stack,
-  Text,
   VStack,
-  background,
   useDisclosure,
 } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 import { NavLink } from "react-router-dom";
 import { useShoppingCart } from "../context/ShopContext";
@@ -69,7 +62,7 @@ const Navbar = () => {
           </Box>
 
           <Box>
-            <Button border="0px" onClick={onOpen} bg="none" _hover="none">
+            <Button border="0px" onClick={onOpen} bg="none">
               <FontAwesomeIcon fontSize="26px" icon={faCartShopping} />
               <span
                 style={{
@@ -168,7 +161,7 @@ const Navbar = () => {
           </Box>
 
           <Box>
-            <Button border="0px" onClick={onOpen} bg="none" _hover="none">
+            <Button border="0px" onClick={onOpen} bg="none">
               <FontAwesomeIcon
                 color="white"
                 fontSize="26px"

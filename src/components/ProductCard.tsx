@@ -34,7 +34,7 @@ const ProductCard = ({ product }: Props) => {
             variant="solid"
             bg={primaryCol}
             color="white"
-            _hover="none"
+            _hover={{ bg: "#4938a1" }}
             marginTop={5}
           >
             View more
