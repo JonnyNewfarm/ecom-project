@@ -4,10 +4,10 @@ import { CanceledError } from "axios";
 export interface Product {
     id: string;
     title?: string;
-    price?: number;
+    price: number;
     imageUrl?: string;
     description?: string;
-    discountedPrice?: string;
+    discountedPrice: number;
     rating?: string;
     tags?: string[];
   }

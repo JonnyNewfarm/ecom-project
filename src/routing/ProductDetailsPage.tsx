@@ -55,12 +55,14 @@ const ProductDetailsPage = () => {
                 <Heading size="md">Details</Heading>
 
                 <Text py="2">{product.description}</Text>
-                <Text py="2">Price: {product.price}</Text>
+                <Text py="2">Price: {product.discountedPrice}</Text>
 
                 <Text py="2">
                   Rating: {product.rating} <StarIcon paddingBottom={1} />
                 </Text>
-                <Text></Text>
+                <Text>
+                  Discount: {product.price - product.discountedPrice} $
+                </Text>
               </CardBody>
 
               <CardFooter>

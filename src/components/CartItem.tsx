@@ -30,7 +30,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
         Remove
       </Button>
 
-      <Text fontSize={20} fontWeight="bolder" marginTop="65%">
+      <Text fontSize={20} fontWeight="bolder" marginTop="50px">
         Total: ${item.price * quantity}
       </Text>
 
