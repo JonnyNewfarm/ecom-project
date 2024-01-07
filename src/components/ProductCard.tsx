@@ -3,6 +3,8 @@ import { Products } from "../hooks/UseProducts";
 import { Button, Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
+const primaryCol = "#170542";
+
 interface Props {
   product: Products;
 }
@@ -28,7 +30,13 @@ const ProductCard = ({ product }: Props) => {
         <CardBody>
           <Heading fontSize="l">{product.title}</Heading>
           <Text paddingTop="15px">Price: {product.price}$</Text>
-          <Button colorScheme="blue" marginTop={5}>
+          <Button
+            variant="solid"
+            bg={primaryCol}
+            color="white"
+            _hover={{ bg: "#4938a1" }}
+            marginTop={5}
+          >
             View more
           </Button>
         </CardBody>

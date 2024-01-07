@@ -3,6 +3,7 @@ import {
   Card,
   CardBody,
   CardFooter,
+  Flex,
   Heading,
   Image,
   Stack,
@@ -15,6 +16,7 @@ import Navbar from "../components/Navbar";
 import { StarIcon } from "@chakra-ui/icons";
 import { useShoppingCart } from "../context/ShopContext";
 import UseProducts from "../hooks/UseProducts";
+const primaryCol = "#170542";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -25,9 +27,14 @@ const ProductDetailsPage = () => {
 
   return (
     <>
-      <Navbar></Navbar> {error && <Text>{error}</Text>}
+      {error && <Text>{error}</Text>}
       {product && (
         <>
+          <Flex justifyContent="center" marginTop="60px">
+            <Heading size="xl" as="h2" color={primaryCol}>
+              {product.title}
+            </Heading>
+          </Flex>
           <Card
             direction={{ base: "column", sm: "row" }}
             overflow="hidden"
@@ -46,13 +53,10 @@ const ProductDetailsPage = () => {
 
             <Stack>
               <CardBody>
-                <Heading size="md">{product.title}</Heading>
+                <Heading size="md">Details</Heading>
 
                 <Text py="2">{product.description}</Text>
-                <Text py="2" as="del">
-                  Before: {product.price}
-                </Text>
-                <Text py="2">Now: {product.discountedPrice}</Text>
+                <Text py="2">Price: {product.price}</Text>
 
                 <Text py="2">
                   Rating: {product.rating} <StarIcon paddingBottom={1} />
@@ -63,7 +67,9 @@ const ProductDetailsPage = () => {
               <CardFooter>
                 <Button
                   variant="solid"
-                  colorScheme="blue"
+                  bg="#2c1e73"
+                  color="white"
+                  _hover={{ bg: "#4938a1" }}
                   onClick={() => increaseCartQuantity(product.id)}
                 >
                   Add to cart
