@@ -5,7 +5,7 @@ import stockPhoto from "../assets/stockPhoto.jpg";
 const HomeImg = () => {
   return (
     <Flex justifyContent="center" marginTop="150px" marginBottom={100}>
-      <Box w="60%">
+      <Box w="75%" height="70%">
         <Text marginBottom="-50px">asdiu</Text>
         <Image
           borderRadius="50px"
