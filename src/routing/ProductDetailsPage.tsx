@@ -21,7 +21,6 @@ const primaryCol = "#170542";
 const ProductDetailsPage = () => {
   const { id } = useParams();
   const { products: product, error } = UseProduct("online-shop/" + id);
-  const { products: ting } = UseProducts("online-shop");
 
   const { increaseCartQuantity } = useShoppingCart();
 

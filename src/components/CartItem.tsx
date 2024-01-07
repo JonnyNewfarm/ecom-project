@@ -35,7 +35,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
       </Text>
 
       <Link
-        to=""
+        to="/checkout"
         style={{
           background: primaryCol,
           color: "white",

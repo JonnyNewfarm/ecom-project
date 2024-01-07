@@ -48,17 +48,10 @@ const Footer = () => {
 
       <Box padding={10}>
         <UnorderedList fontSize="20px">
-          <Text fontWeight="bolder">Contact</Text>
+          <Text fontWeight="bolder">Socials</Text>
           <Text></Text>
-          <Text>
-            <PhoneIcon /> 12 13 14 15
-          </Text>
-          <Text>
-            <EmailIcon /> ecom@support.com
-          </Text>
-          <Link to="/contact">
-            <Text as="u">Contact form</Text>
-          </Link>
+          <Text>Facebook</Text>
+          <Text>Instagram</Text>
         </UnorderedList>
       </Box>
     </Flex>
