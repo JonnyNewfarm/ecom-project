@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import React from "react";
+
 import stockPhoto from "../assets/stockPhoto.jpg";
 
 const HomeImg = () => {

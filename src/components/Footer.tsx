@@ -1,13 +1,5 @@
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Flex,
-  HStack,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
-import React from "react";
+import { Box, Flex, Text, UnorderedList } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 const primaryCol = "#170542";
 const Footer = () => {

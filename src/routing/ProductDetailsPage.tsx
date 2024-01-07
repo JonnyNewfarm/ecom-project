@@ -12,10 +12,8 @@ import {
 
 import { useParams } from "react-router-dom";
 import UseProduct from "../hooks/useProduct";
-import Navbar from "../components/Navbar";
 import { StarIcon } from "@chakra-ui/icons";
 import { useShoppingCart } from "../context/ShopContext";
-import UseProducts from "../hooks/UseProducts";
 const primaryCol = "#170542";
 
 const ProductDetailsPage = () => {

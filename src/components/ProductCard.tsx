@@ -1,4 +1,3 @@
-import React from "react";
 import { Products } from "../hooks/UseProducts";
 import { Button, Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";

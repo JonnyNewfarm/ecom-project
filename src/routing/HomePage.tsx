@@ -1,5 +1,5 @@
-import { Grid, GridItem, Heading } from "@chakra-ui/react";
-import Navbar from "../components/Navbar";
+import { Grid, GridItem } from "@chakra-ui/react";
+
 import ProductGrid from "../components/ProductGrid";
 import { useState } from "react";
 import HomeImg from "../components/HomeImg";

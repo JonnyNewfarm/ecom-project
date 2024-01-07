@@ -1,23 +1,16 @@
 import {
-  AbsoluteCenter,
-  Box,
   Button,
   Center,
   Container,
-  Flex,
-  FormControl,
   FormLabel,
   Heading,
   Input,
-  Stack,
   Textarea,
-  VStack,
 } from "@chakra-ui/react";
 import { FieldValues, useForm } from "react-hook-form";
-import { Schema, z } from "zod";
+import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, useNavigate } from "react-router-dom";
-import { FormEvent, useRef, useState } from "react";
 
 const schema = z.object({
   name: z
@@ -42,7 +35,7 @@ const Contact = () => {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: FieldValues) => console.log(data);
-  const navigate = useNavigate();
+
   return (
     <>
       <Container marginTop="70px">
