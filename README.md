@@ -46,6 +46,9 @@ npm install
 
 npm run dev
 
+## Netlify link:
+https://grand-cajeta-40065b.netlify.app/
+
 
 
 ## Contact
