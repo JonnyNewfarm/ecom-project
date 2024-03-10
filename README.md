@@ -7,7 +7,7 @@ A e-commerce website
 ## Brief:
  * The Homepage should have a list of all the products.
 * search bar that filters products when typing in a product name.
-             * Clicking on a product should take a user to an individual product page.
+             *  Clicking on a product should take a user to an individual product page.
                * You pages should use a Layout component that contains a header and footer.
                .* <Cart icon component that acts as a button as well as displays the current number of items in the cart.
               *  discountedPrice property to display the price of the product. If there is a difference between the discountedPrice and price properties then that means there is a discount for that product. Calculate what this discount is and display it on the page.
